@@ -15,8 +15,8 @@ target/
 *.jar
 
 # Logs
-logs/
-*.log
+logs/*
+!logs/.gitkeep
 
 # Kafka Streams state
 kafka-state/
