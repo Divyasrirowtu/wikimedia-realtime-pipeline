@@ -92,3 +92,26 @@ Completed:
 - SSE reconnection handling
 - Idempotent ClickHouse writes
 - End-to-end testing
+
+### Step 3 — Wikimedia SSE Producer
+
+Completed:
+
+- Wikimedia Recent Changes SSE connection
+- SSE event parsing
+- JSON parsing
+- Filtering for `type == "edit"`
+- Publishing original edit-event JSON to Kafka
+- Kafka producer configuration
+- Producer Docker container
+- Environment-based configuration
+- Automatic SSE reconnection
+- Producer restart verification
+
+Producer source:
+
+`producer/producer.py`
+
+Kafka topic:
+
+`wikimedia.recentchange`
