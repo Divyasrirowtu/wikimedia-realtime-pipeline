@@ -55,3 +55,40 @@ Important variables:
 
 ```powershell
 docker compose up -d
+
+## Current Implementation Status
+
+### Step 1 — Project Infrastructure
+
+Completed:
+
+- Project structure
+- Docker Compose
+- Zookeeper
+- Kafka
+- ClickHouse
+- Environment configuration
+- Docker volumes
+- Health checks
+
+### Step 2 — Kafka Topic
+
+Completed:
+
+- Kafka topic `wikimedia.recentchange`
+- Exactly 3 partitions
+- Replication factor of 1 for local development
+- Topic verification
+- Reusable PowerShell topic creation script
+
+### Future Steps
+
+- Wikimedia SSE producer
+- Edit event filtering
+- Custom `wiki` Kafka partitioner
+- ClickHouse `edit_counts` table
+- Kafka Streams 5-minute tumbling windows
+- ClickHouse persistence
+- SSE reconnection handling
+- Idempotent ClickHouse writes
+- End-to-end testing
